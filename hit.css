@@ -146,38 +146,119 @@ button:hover{
 .kk:hover{
     color: gray;
 }
-@media(max-width:950px){
- 
-  body{
-    height: 100%;   background-image: linear-gradient(to right,#01022d,#0000009d),
-    url('img.png');
-    background-position: to right;
-    background-repeat: repeat;
-  }
-
+@media (max-width:1200px ) {
     .container {
-        display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px; 
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
-        
-        .dashboard, .nav {
-          width: 100%; 
-          text-align: center;
-        }
-        *{
-            margin: 2px;
 
-        }
-   .dashboard{
-    height: 180px;
-    top: 50px;
-   }
-      
-  
-  
+    .dashboard {
+        width: auto;
+        height: auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
 
+    .dashboard ul {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+    }
+
+    .dashboard:hover {
+        width: 60%
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    li{
+        list-style: none;
+    }
+    h2 {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+    button {
+        width: 90%;
+        padding: 12px;
+    }
+    .body{
+        background-image: linear-gradient(to right,#01022d,#0000009d),
+        url('img.png');
+        background-position: to right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+    }
 }
+
+@media (max-width: 950px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .dashboard ul {
+        flex-direction: column;
+        gap: 5px;
+        list-style: none;
+    }
+
+    .dashboard {
+        height: auto;
+        padding: 5px 0;
+        width: auto;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .body{
+        background-image: linear-gradient(to right,#01022d,#0000009d),
+        url('img.png');
+        background-position: to right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto;
+    }
+    .kk:hover{
+        color: gray;
+        
+    }}
+
+
+
+   
+
+
+
+
+
+
 
